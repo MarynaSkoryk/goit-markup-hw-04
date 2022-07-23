@@ -147,6 +147,11 @@ img {
   text-decoration: none;
 }
 
+.button-envelope:hover,
+.button-envelope:focus {
+  color: var(--accent-text-color);
+}
+
 /*Hero*/
 .hero {
   background-color: var(--secondary-background-color);
@@ -154,9 +159,10 @@ img {
   padding-bottom: 200px;
   background-color: rgba(47, 48, 58, 0.4);
   background-image: url(../images/hero-image.jpg);
+  max-width: 1600px;
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
+  margin: 0 auto;
 }
 .hero-container {
   width: 696px;
