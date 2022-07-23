@@ -319,36 +319,75 @@ img {
 }
 .social-block {
   display: flex;
+  align-items: center;
   justify-content: center;
 }
-.social:not(:last-child) {
+.social-link:not(:last-child) {
   margin-right: 10px;
 }
 .social-link {
   display: block;
-  text-align: center;
-}
-
-.social-icon:hover,
-.social:focus {
-  fill: var(--accent-text-color);
-  stroke: var(--color-text-white);
 }
 .social {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 44px;
   height: 44px;
-  margin: auto 0;
+  padding: 12px;
+  border-radius: 50%;
+  background-color: transparent;
+  fill: #afb1b8;
 }
-
 .social-icon {
   box-sizing: border-box;
+}
+.social:hover {
+  background-color: var(--accent-text-color);
+  fill: var(--color-text-white);
+}
+/*Постоянные клиенты*/
+.customers {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.customers-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+  margin-bottom: 50px;
+}
+.client-list {
+  display: flex;
+}
+.client-box {
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  padding: 16px 32px;
+}
+.client-box:not(:last-child) {
+  margin-right: 30px;
+}
+.client-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  fill: #afb1b8;
+}
+.client-link:hover {
+  fill: var(--accent-text-color);
 }
 
 /*Footer*/
 .all-footer {
   background-color: var(--secondary-background-color);
   padding: 60px 0;
+  display: flex;
 }
 
 .footer-style {
@@ -356,6 +395,7 @@ img {
   padding: 0 15px;
   margin-left: auto;
   margin-right: auto;
+  display: flex;
 }
 .logo-footer {
   display: block;
@@ -387,6 +427,9 @@ img {
 .link-footer:not(:last-child) {
   margin-bottom: 9px;
 }
+.all-address {
+  margin-right: 70px;
+}
 .address-link {
   font-size: 14px;
   line-height: 1.71;
@@ -397,6 +440,42 @@ img {
 .address-link:hover,
 .address-link:focus {
   color: var(--accent-text-color);
+}
+
+.strong-word {
+  display: block;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--color-text-white);
+  margin-bottom: 20px;
+}
+.footer-social-list {
+  display: flex;
+}
+.footer-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  fill: var(--color-text-white);
+  background-color: rgba(255, 255, 255, 0.1);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.footer-link:not(:last-child) {
+  margin-right: 10px;
+}
+.footer-social-logo {
+  justify-content: center;
+  text-align: center;
+}
+.footer-box:hover {
+  background-color: var(--accent-text-color);
+  fill: var(--color-text-white);
 }
 
 /*Portfolio*/
