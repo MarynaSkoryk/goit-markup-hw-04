@@ -150,8 +150,12 @@ img {
   justify-content: center;
   align-self: center;
 }
-.button-icon:hover {
+.auth-link:hover,
+.auth-link:focus {
   stroke: var(--accent-text-color);
+}
+.button-icon {
+  margin-right: 10px;
 }
 
 /*Hero*/
@@ -159,7 +163,7 @@ img {
   background-color: var(--secondary-background-color);
   padding-top: 200px;
   padding-bottom: 200px;
-  background-color: rgba(47, 48, 58, 0.4);
+  background-image: linear-gradient (rgba(47, 48, 58, 0.4));
   background-image: url(../images/hero-image.jpg);
   max-width: 1600px;
   background-repeat: no-repeat;
@@ -342,7 +346,8 @@ img {
 .social-icon {
   box-sizing: border-box;
 }
-.social:hover {
+.social:hover,
+.social:focus {
   background-color: var(--accent-text-color);
   fill: var(--color-text-white);
 }
@@ -379,7 +384,8 @@ img {
   align-items: center;
   fill: #afb1b8;
 }
-.client-link:hover {
+.client-link:hover,
+.client-link:focus {
   fill: var(--accent-text-color);
 }
 
@@ -473,7 +479,8 @@ img {
   justify-content: center;
   text-align: center;
 }
-.footer-box:hover {
+.footer-box:hover,
+.footer-box:focus {
   background-color: var(--accent-text-color);
   fill: var(--color-text-white);
 }
