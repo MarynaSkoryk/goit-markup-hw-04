@@ -447,9 +447,7 @@ img {
 .link-footer:not(:last-child) {
   margin-bottom: 9px;
 }
-.all-address {
-  margin-right: 70px;
-}
+
 .address-link {
   font-size: 14px;
   line-height: 1.71;
@@ -460,6 +458,9 @@ img {
 .address-link:hover,
 .address-link:focus {
   color: var(--accent-text-color);
+}
+.all-address {
+  margin-right: 70px;
 }
 
 .strong-word {
