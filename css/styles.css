@@ -142,6 +142,8 @@ img {
   margin-right: 50px;
 }
 .auth-link {
+  display: flex;
+  align-items: center;
   padding: 32px 0;
   color: var(--primary-text-color);
   text-decoration: none;
